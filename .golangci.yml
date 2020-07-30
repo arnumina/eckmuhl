@@ -1,0 +1,8 @@
+### https://github.com/golangci/golangci-lint
+###------------------------------------------
+
+linters:
+  enable-all: true
+  disable:
+    - gochecknoglobals
+    - goerr113
