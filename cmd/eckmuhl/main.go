@@ -95,11 +95,8 @@ func cmdHelp() error {
 	return nil
 }
 
-func cmdVersion() error {
-	builtAt, err := command.UnixToTime(_builtAt)
-	if err != nil {
-		return err
-	}
+func cmdVersion() {
+	builtAt := command.UnixToTime(_builtAt)
 
 	fmt.Println()
 	fmt.Println("  eckmuhl")
@@ -109,8 +106,6 @@ func cmdVersion() error {
 	fmt.Println("  by       : Archivage Numérique © INA", time.Now().Year())
 	fmt.Println("-----------------------------------------------")
 	fmt.Println()
-
-	return nil
 }
 
 func runCommand(file string) error {
@@ -146,7 +141,8 @@ func run() error {
 	case "--help", "-help", "help":
 		return cmdHelp()
 	case "--version", "-version", "version":
-		return cmdVersion()
+		cmdVersion()
+		return nil
 	}
 
 	plugins, err := findPlugins()
