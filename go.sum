@@ -1,2 +1,6 @@
 github.com/arnumina/eckmuhl.core v0.0.0-20200730170316-6f46037ed034 h1:V+kSm5OdGUWxefHF+aeE1d7mJH03yxYNAI+KpyzMkZk=
 github.com/arnumina/eckmuhl.core v0.0.0-20200730170316-6f46037ed034/go.mod h1:G7mQIJb1yw7un4lilgaLNJ3JpWwQWi5Ijz03dYG3NJU=
+github.com/arnumina/failure v0.0.0-20200712145805-92d1fe949ac6 h1:mG368Thv5t6zONfNUmzJOI6jMXQFulcXuL3thG4AoRM=
+github.com/arnumina/failure v0.0.0-20200712145805-92d1fe949ac6/go.mod h1:lsRyz6YJxNpgzBe7dEkI+Y+9VR43v7vVrZwpfqCtLtA=
+github.com/arnumina/logfmt v0.0.0-20200712130836-867c8dd4b690 h1:6G9aYff0ejsfgbdHrRiPUBQV101kp7v7OKIvTmAqvGI=
+github.com/arnumina/logfmt v0.0.0-20200712130836-867c8dd4b690/go.mod h1:AeTbgRS8lCSNc2PNFADFsGz7hWop7PGJh3dv2cDWqQ8=

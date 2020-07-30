@@ -21,6 +21,7 @@ import (
 	"time"
 
 	"github.com/arnumina/eckmuhl.core/pkg/command"
+	"github.com/arnumina/failure"
 )
 
 const (
@@ -121,10 +122,9 @@ func runCommand(file string) error {
 
 	fn, ok := ef.(func() command.Command)
 	if !ok {
-		return fmt.Errorf( /////////////////////////////////////////////////////////////////////////////////////////////
-			"this plugin doesn't export the right function: plugin=%s",
-			file,
-		)
+		return failure.New(nil).
+			Set("plugin", file).
+			Msg("this plugin doesn't export the right function") ///////////////////////////////////////////////////////
 	}
 
 	cmd := fn()
