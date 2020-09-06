@@ -101,7 +101,7 @@ func cmdVersion() {
 
 	fmt.Println()
 	fmt.Println("  eckmuhl")
-	fmt.Println("-----------------------------------------------")
+	fmt.Println("===============================================")
 	fmt.Println("  version  :", _version)
 	fmt.Println("  built at :", builtAt.String())
 	fmt.Println("  by       : Archivage Numérique © INA", time.Now().Year())
